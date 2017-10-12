@@ -33,10 +33,8 @@ def login(number, password, oncaptcha):
 
     resp = s.post(url, data=data)
     print(resp.text)
-    cookies = dict(resp.cookies)
-    print(cookies)
     # with open('url1.html', 'w') as fp:
     #     fp.write(content)
 
 if __name__ == '__main__':
-    login('3116004736', 'lzy2113018', get_captcha)
+    login('学号', '密码', get_captcha)
