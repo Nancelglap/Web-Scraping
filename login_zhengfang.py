@@ -6,7 +6,7 @@ url = "http://jwgl.gdut.edu.cn/default2.aspx"
 def get_captcha(data):
     with open('captcha.gif','wb') as fb:
         fb.write(data)
-    return input('captcha')
+    return input('captcha\n')
 
 def login(number, password, oncaptcha):
     s = requests.Session()
