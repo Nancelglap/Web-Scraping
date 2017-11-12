@@ -5,7 +5,7 @@ import json
 def get_captcha(data):
     with open('captcha.gif','wb') as fb:
         fb.write(data)
-    return input('captcha')
+    return input("captcha\n")
 
 def login(oncaptcha):
     # 首页地址
